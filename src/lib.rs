@@ -144,11 +144,13 @@ where
         (State::default(), StateData::default()),
         |(state, data), event| {
             let s = Style::new().fg(Colour::Blue).paint(format!("{:?}", state));
-            let sep = Style::new().fg(Colour::Yellow).paint("|>");
+            let d = Style::new().fg(Colour::Green).paint(format!("{:?}", data));
+            let sep_e = Style::new().fg(Colour::Yellow).paint("|>");
+            let sep_d = Style::new().fg(Colour::Yellow).paint("@");
             let e = Style::new()
                 .fg(Colour::Purple)
                 .paint(format!("{:?}", event));
-            writeln!(writer, "{} {} {}", s, sep, e)?;
+            writeln!(writer, "{} {} {} {} {}", s, sep_d, d, sep_e, e)?;
             write_event(&mut sink, settings, environment, theme, state, data, event)
         },
     )?;

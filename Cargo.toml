@@ -39,6 +39,11 @@ version = "^4.5"
 default-features = false
 features = ["parsing", "assets", "dump-load", "regex-fancy"]
 
+[dependencies.textwrap]
+version = "^0.14"
+default-features = false
+features = ["unicode-linebreak", "unicode-width"]
+
 [target.'cfg(unix)'.dependencies]
 libc = "^0.2"
 
