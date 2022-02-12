@@ -1,3 +1,5 @@
+**Migrated to <https://codeberg.org/flausch/mdcat/>**
+
 # mdcat
 
 Fancy `cat` for Markdown (that is, [CommonMark][]):
