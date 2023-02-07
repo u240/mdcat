@@ -21,7 +21,7 @@ static = ["reqwest/rustls-tls-native-roots"]
 [dependencies]
 ansi_term = "0.12.1"
 anyhow = "1.0.68"
-base64 = "0.20.0"
+base64 = "0.21.0"
 clap = { version = "4.0.32", features = ["derive"] }
 env_proxy = "0.4.1"
 gethostname = "0.4.1"
