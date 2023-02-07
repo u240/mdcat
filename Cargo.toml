@@ -22,7 +22,7 @@ static = ["reqwest/rustls-tls-native-roots"]
 ansi_term = "0.12.1"
 anyhow = "1.0.68"
 base64 = "0.20.0"
-clap = { version = "4.0.32", features = ["derive"] }
+clap = { version = "4.1.4", features = ["derive"] }
 env_proxy = "0.4.1"
 gethostname = "0.4.1"
 image = "0.24.5"
@@ -54,7 +54,7 @@ temp-env = "0.3.1"
 
 [build-dependencies]
 # To generate completions during build
-clap = { version = "4.0.32", features = ["derive"] }
+clap = { version = "4.1.4", features = ["derive"] }
 clap_complete = "4.0.7"
 
 [profile.release]
