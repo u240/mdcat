@@ -1,8 +1,8 @@
 = mdcat(1)
 Sebastian Wiesner <sebastian@swsnr.de>
 :doctype: manpage
-:revnumber: 2.3.0
-:revdate: 2024-07-28
+:revnumber: 2.3.1
+:revdate: 2024-08-04
 :mansource: mdcat {revnumber}
 :manmanual: mdcat
 
@@ -215,7 +215,7 @@ Matches partial hostnames (e.g. `example.org` also disables proxy for `www.examp
 MDCAT_LOG::
     Directives to configure output of tracing information.
 +
-See <https://docs.rs/tracing-subscriber/latest/tracing_subscriber/struct.EnvFilter.html#directives> for syntax details; use `MDCAT_LOG=trace` for complete debugging information, and `MDCAT_LOG=mdcat::render=trace` to trace rendering only.
+See <https://docs.rs/tracing-subscriber/latest/tracing_subscriber/struct.EnvFilter.html#directives> for syntax details; use `MDCAT_LOG=trace` for complete debugging information, and `MDCAT_LOG=pulldown_cmark_mdcat::render=trace` to trace rendering only.
 
 == Conforming to
 

@@ -8,8 +8,16 @@ Use `cargo release` to create a new release.
 
 ## [Unreleased]
 
+## [2.3.1] – 2024-08-04
+
 ### Changed
 - Release builds no longer use fat LTO, which significantly reduces compilation time.
+- Update dependencies.
+
+### Fixed
+- mdcat no longer panics on markups in descriptions of rendered images (see [GH-287]).
+
+[GH-287]: https://github.com/swsnr/mdcat/pull/287
 
 ## [2.3.0] – 2024-07-28
 
@@ -768,7 +776,8 @@ Use `cargo release` to create a new release.
 - Support ordered and unordered lists, with nest.
 - Show links, with references grouped by section.
 
-[Unreleased]: https://github.com/swsnr/mdcat/compare/mdcat-2.3.0...HEAD
+[Unreleased]: https://github.com/swsnr/mdcat/compare/mdcat-2.3.1...HEAD
+[2.3.1]: https://github.com/swsnr/mdcat/compare/mdcat-2.3.0...mdcat-2.3.1
 [2.3.0]: https://github.com/swsnr/mdcat/compare/mdcat-2.2.0...mdcat-2.3.0
 [2.2.0]: https://github.com/swsnr/mdcat/compare/mdcat-2.1.2...mdcat-2.2.0
 [2.1.2]: https://github.com/swsnr/mdcat/compare/mdcat-2.1.1...mdcat-2.1.2
